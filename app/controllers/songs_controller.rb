@@ -1,6 +1,7 @@
 class SongsController < ApplicationController
   def index
-  	@songs = Song.page(params[:page])
+  	@q = Song.ransack(params[:q])
+    @songs = @q.result.page(params[:page])
   end
   
 end
