@@ -20,7 +20,7 @@
 @import "bootstrap-sprockets";
 
 // Import cerulean variables
-@import "bootswatch/Cyborg/variables";
+@import "bootswatch/cyborg/variables";
 
 // Then bootstrap itself
 @import "bootstrap";
@@ -29,7 +29,7 @@
 body { padding-top: 60px; }
 
 // And finally bootswatch style itself
-@import "bootswatch/Cyborg/bootswatch";
+@import "bootswatch/cyborg/bootswatch";
 
 // Whatever application styles you have go last
 //@import "base";
