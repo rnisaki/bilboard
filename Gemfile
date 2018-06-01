@@ -9,6 +9,7 @@ gem 'ransack'
 gem 'kaminari-bootstrap', '~> 3.0.1'
 gem 'kaminari'
 gem 'seed-fu', '~> 2.3'
+gem 'rails-erd'
 
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'bootswatch-rails'

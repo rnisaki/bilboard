@@ -11,7 +11,12 @@
     <% @songs.each do |song| %>
     <tr>
       <td><%= song.title %></td>
-      <td><%= song.display_artist %></td>
+      <td>
+        <% song.artists.each do |artist| %>
+      <% song.display_artist.gsub!(/#{artist.name}/) {link_to artist.name, artist_path(artist)} %>
+    <% end %>
+    <%= song.display_artist.html_safe %>
+      </td>
       <td><%= song.ranking %></td>
       <td><%= song.year %></td>
     </tr>
